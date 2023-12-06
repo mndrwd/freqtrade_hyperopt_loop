@@ -8,7 +8,7 @@
 
 mintrades=50
 minprofit=50
-minobjecttive=-50
+minobjective=-50
 outputfolder="/home/user/freqtrade_review"
 #note: does not seem to support ~ tilde usage at this time
 freqtradefolder="/mnt/3-8tb-ssd-ml/freqtrade"
