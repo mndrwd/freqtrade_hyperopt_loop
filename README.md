@@ -30,4 +30,4 @@ example: ./ft_hyperopt_hours.sh mystrategy 9600 ShortTradeDurHyperOptLoss 0 1h
 
 timeframe optional, example: 1h
 
-Script will create a "freqtrade_review folder in your home folder where the best testresults are written to.
+Script will create a "freqtrade_review folder in the output folder, where the best testresults are written to.
