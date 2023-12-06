@@ -16,7 +16,7 @@ run example:
 ./ft_hyperopt_hours.sh mystrategy 9600 all all
 ./ft_hyperopt_hours.sh mystrategy 9600 all stoploss0roi0trailing 1h
 
-hours: 9600 loop for 40 days, 96000 400 days
+hours: 960 loop for 40 days, 9600 400 days
 
 hyperoptlossmethod: all (cycles all methods permuted) or for example default: ShortTradeDurHyperOptLoss
 
