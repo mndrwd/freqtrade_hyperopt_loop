@@ -32,12 +32,12 @@ hours: 960 loop for 40 days, 9600 400 days
 
 hyperoptlossmethod: all (cycles all methods permuted) or for example default: ShortTradeDurHyperOptLoss
 
-spaces: "all" or list using 0 as seperator, like: 
+spaces: "all" (random) or list using 0 as seperator, like: 
 roi0stoploss0trailing
 roi0trailing
-"all" will cycle randomly using python random method.
 
-note that "all" will include testing (only) ¨buy sell". forcing only testing buy+sell spaces will be accomplished by using 0 as arg
+Note that "all" will include testing (only) ¨buy sell". forcing only testing buy+sell spaces will be accomplished by using 0 as arg
+
 example: ./ft_hyperopt_hours.sh mystrategy 9600 ShortTradeDurHyperOptLoss 0 1h
 
 timeframe optional, example: 1h
