@@ -1,5 +1,5 @@
 #/!bin/bash
-
+# By github.com/mndrwd/
 # 1st parameter: strategy class name
 # 2nd parameter: how many hours testing
 # 3rd parameter: hyperopt-loss method ("all" cycles all)
