@@ -1,3 +1,4 @@
+# By github.com/mndrwd
 #$1 =  strategyname $2 = epochs
 #--spaces buy sell roi stoploss trailing
 # --disable-param-export
