@@ -8,7 +8,8 @@
 
 mintrades=50
 minprofit=50
-outputfolder="/home/babo/freqtrade_review"
+outputfolder="/home/user/freqtrade_review"
+#note: does not seem to support ~ tilde usage at this time
 freqtradefolder="/mnt/3-8tb-ssd-ml/freqtrade"
 #make ramfs
 #mkdir -p user_data/hyperopt_results
