@@ -8,6 +8,7 @@
 
 mintrades=50
 minprofit=50
+minobjecttive=-50
 outputfolder="/home/user/freqtrade_review"
 #note: does not seem to support ~ tilde usage at this time
 freqtradefolder="/mnt/3-8tb-ssd-ml/freqtrade"
@@ -185,7 +186,7 @@ fi
 
     ../ft_hyperopt.sh $1 480 $loss $spcs $tfr
     touch user_data/hyperopt_results/${1}tmp.log
-    freqtrade hyperopt-list --min-objective -50 --profitable --min-trades ${mintrades} --min-total-profit ${minprofit} --print-json >>user_data/hyperopt_results/${1}tmp.log
+    freqtrade hyperopt-list --min-objective ${minobjective} --profitable --min-trades ${mintrades} --min-total-profit ${minprofit} --print-json >>user_data/hyperopt_results/${1}tmp.log
     #if cat user_data/hyperopt_results/${1}tmp.log | grep -q "INFO - 0 best profitable epochs found"; then
      if [ $(stat -c %s user_data/hyperopt_results/${1}tmp.log) -lt 4 ]; then
      rm user_data/hyperopt_results/*
