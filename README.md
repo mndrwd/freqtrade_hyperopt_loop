@@ -23,7 +23,8 @@ hyperoptlossmethod: all (cycles all methods permuted) or for example default: Sh
 spaces: "all" or list using 0 as seperator, like: 
 roi0stoploss0trailing
 roi0trailing
-"all" will cycle randomly using python random method
+"all" will cycle randomly using python random method.
+
 note that "all" will include testing (only) ¨buy sell". forcing only testing buy+sell spaces will be accomplished by using 0 as arg
 example: ./ft_hyperopt_hours.sh mystrategy 9600 ShortTradeDurHyperOptLoss 0 1h
 
