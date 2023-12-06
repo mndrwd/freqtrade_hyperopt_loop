@@ -136,7 +136,6 @@ fi
   then
   spcs="trailing0stoploss0roi"
   else
-  then
   spcs=$4
  fi
 
