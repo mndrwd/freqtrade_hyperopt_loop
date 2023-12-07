@@ -25,8 +25,11 @@ Modify ft_hyperopt_hours to set your desired amount of epochs (default 480)
 
 run example:
 ./ft_hyperopt_hours.sh strategy_class hours hyperoptlossmethod spaces timeframe(optional)
+
 ./ft_hyperopt_hours.sh mystrategy 9600 all all
+
 ./ft_hyperopt_hours.sh mystrategy 9600 all stoploss0roi0trailing 1h
+
 
 hours: 960 loop for 40 days, 9600 400 days
 
@@ -40,6 +43,8 @@ Note that "all" will include testing (only) ¨buy sell". forcing only testing bu
 
 example: ./ft_hyperopt_hours.sh mystrategy 9600 ShortTradeDurHyperOptLoss 0 1h
 
-timeframe optional, example: 1h
+timeframe optional, example: 1h. if none supplies randomly picks 3m, 5m, 15m, 30m, 1h, 4h
+
+can be increased by modifying ft_hyperopt_hours.sh
 
 Script will create a "freqtrade_review folder in the output folder, where the best testresults are written to.
